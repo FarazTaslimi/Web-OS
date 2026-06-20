@@ -1,0 +1,91 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="sound" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Sound</h1>
+  </div>
+  <div class="page-subtitle">Output, input and sound effects</div>
+</div>
+
+<div class="card">
+  <div class="card-title">Output</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="vol" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Master Volume</div><div class="setting-desc">Speakers (Realtek Audio)</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="0" max="100" value="65" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">65%</span></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="sound" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Output Device</div><div class="setting-desc">Choose where to play audio</div></div>
+    <select class="setting-select"><option>Speakers (Default)</option><option>Headphones</option><option>HDMI Audio</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="sound" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Mute</div><div class="setting-desc">Silence all audio output</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Input</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="sound" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Microphone Volume</div><div class="setting-desc">Built-in Microphone</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="0" max="100" value="80" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">80%</span></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Sound Effects</div>
+  <div class="setting-row">
+    <div class="setting-info" style="padding-left:0"><div class="setting-name">System Sounds</div><div class="setting-desc">Plays sounds for events like login and notifications</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">App Volume Mixer</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="display" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Edge Browser</div><div class="setting-desc">Media playback</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="0" max="100" value="80" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">80%</span></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="sound" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">System Sounds</div><div class="setting-desc">Notifications, alerts</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="0" max="100" value="50" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">50%</span></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Enhancements</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Spatial sound</div><div class="setting-desc">Windows Sonic for Headphones</div></div>
+    <select class="setting-select"><option>Windows Sonic</option><option>Dolby Atmos</option><option>Off</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Bass boost</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Loudness equalization</div><div class="setting-desc">Normalize volume across content</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Noise suppression (mic)</div><div class="setting-desc">Filter background noise from microphone</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>

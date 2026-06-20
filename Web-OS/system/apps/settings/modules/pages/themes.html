@@ -1,0 +1,68 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="themes" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Themes & Colors</h1>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">App Theme</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">App mode</div><div class="setting-desc">Choose light or dark for apps</div></div>
+    <select class="setting-select"><option>Dark</option><option>Light</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Transparency effects</div><div class="setting-desc">Glassmorphism and blur</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Animation effects</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Accent Color</div>
+  <div style="padding:14px 18px">
+    <div class="color-swatches">
+      <div class="swatch selected" style="background:#60cdff" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#0067c0" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#8764b8" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#ef6950" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#ca5010" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#498205" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#00b7c3" onclick="selectSwatch(this)"></div>
+      <div class="swatch" style="background:#ff8c00" onclick="selectSwatch(this)"></div>
+    </div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show accent on Start and taskbar</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Window Style</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Window corner radius</div></div>
+    <select class="setting-select"><option>Rounded (Default)</option><option>Slightly rounded</option><option>Square</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Title bar color</div><div class="setting-desc">Apply accent color to title bars</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Border thickness</div></div>
+    <select class="setting-select"><option>Thin</option><option>Default</option><option>Thick</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Sound Theme</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Sound scheme</div></div>
+    <select class="setting-select"><option>Default</option><option>Chimes</option><option>Robotica</option><option>None</option></select>
+  </div>
+</div>

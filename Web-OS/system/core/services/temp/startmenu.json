@@ -1,0 +1,29 @@
+{
+  "pinned": [
+    {
+      "id": "explorer",
+      "title": "File Explorer",
+      "icon": "📁"
+    },
+    {
+      "id": "edge",
+      "title": "Edge",
+      "icon": "🌐"
+    },
+    {
+      "id": "store",
+      "title": "Store",
+      "icon": "🛒"
+    },
+    {
+      "id": "settings",
+      "title": "Settings",
+      "icon": "⚙️"
+    },
+    {
+      "id": "terminal",
+      "title": "Terminal",
+      "icon": "💻"
+    }
+  ]
+}

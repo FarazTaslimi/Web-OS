@@ -1,0 +1,18 @@
+{
+  "name": "webos",
+  "version": "0.1.0",
+  "description": "WebOS — a web-based desktop OS concept",
+  "main": "boot.js",
+  "scripts": {
+    "start": "node boot.js",
+    "dev": "node boot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "node-wifi": "^2.0.16"
+  }
+}

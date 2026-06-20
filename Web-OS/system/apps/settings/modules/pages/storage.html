@@ -1,0 +1,97 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="storage" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Storage</h1>
+  </div>
+  <div class="page-subtitle">Drives, disk usage and cleanup</div>
+</div>
+
+<div class="disk-card">
+  <div class="disk-header"><div class="disk-name">💿 Local Disk (C:)</div><div class="disk-size">128 GB used of 512 GB</div></div>
+  <div class="disk-bar"><div class="disk-fill warn" style="width:25%;background:linear-gradient(90deg,#60cdff,#ffc800)"></div></div>
+  <div class="disk-legend">
+    <div class="disk-legend-item"><div class="disk-dot" style="background:#60cdff"></div>System (45 GB)</div>
+    <div class="disk-legend-item"><div class="disk-dot" style="background:#ffc800"></div>Apps (60 GB)</div>
+    <div class="disk-legend-item"><div class="disk-dot" style="background:rgba(255,255,255,.15)"></div>Free (384 GB)</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Storage Usage</div>
+  <div class="setting-row clickable">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="file" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">System & Reserved</div><div class="setting-desc">45.2 GB</div></div>
+    <div class="row-arrow">
+      <span class="icon-placeholder" data-icon="chevron-right" style="width:16px;height:16px;"></span>
+    </div>
+  </div>
+  <div class="setting-row clickable">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="grid" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Apps & Features</div><div class="setting-desc">60.1 GB</div></div>
+    <div class="row-arrow">
+      <span class="icon-placeholder" data-icon="chevron-right" style="width:16px;height:16px;"></span>
+    </div>
+  </div>
+  <div class="setting-row clickable">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="trash" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Temporary Files</div><div class="setting-desc">3.4 GB · Recommended for cleanup</div></div>
+    <span class="badge warn">Clean up</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Storage Sense</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Storage Sense</div><div class="setting-desc">Automatically free up space by removing temp files</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Run Storage Sense</div><div class="setting-desc">When to automatically clean</div></div>
+    <select class="setting-select"><option>Every week</option><option>Every month</option><option>When low on disk</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Backup & Restore</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="refresh" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">File History</div><div class="setting-desc">Last backup: Today, 08:00 · Drive D:</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Backup frequency</div></div>
+    <select class="setting-select"><option>Every hour</option><option>Every 6 hours</option><option>Daily</option></select>
+  </div>
+  <div class="setting-row clickable">
+    <div class="setting-info"><div class="setting-name">Backup now</div><div class="setting-desc">Manually trigger a backup</div></div>
+    <div class="row-arrow">
+      <span class="icon-placeholder" data-icon="chevron-right" style="width:16px;height:16px;"></span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Advanced Storage</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">OneDrive sync</div><div class="setting-desc">15 GB of 20 GB used</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Delivery Optimization</div><div class="setting-desc">Use bandwidth for update downloads</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Reserved storage</div><div class="setting-desc">7 GB reserved for updates and features</div></div>
+    <span class="badge">7 GB</span>
+  </div>
+</div>

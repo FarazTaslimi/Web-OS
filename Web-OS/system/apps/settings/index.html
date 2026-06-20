@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="../../lib/resources.js"></script>
+</head>
+<body>
+<div id="app">
+
+<!-- ======================== SIDEBAR ======================== -->
+<div id="sidebar">
+  <div class="sidebar-header">
+    <span class="icon-placeholder" data-icon="win" style="width:24px;height:24px;display:inline-block;"></span>
+    <span class="sidebar-title">Settings</span>
+  </div>
+
+  <div class="sidebar-search">
+    <div class="sidebar-search-inner">
+      <span class="icon-placeholder" data-icon="search" style="width:16px;height:16px;"></span>
+      <input type="text" placeholder="Find a setting…">
+    </div>
+  </div>
+
+  <div class="sidebar-nav">
+    <!-- Home -->
+    <div class="nav-item" data-page="home">
+      <span class="icon-placeholder" data-icon="home" style="width:20px;height:20px;"></span>
+      Home
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">System</div>
+      <div class="nav-item" data-page="system">
+        <span class="icon-placeholder" data-icon="desktop" style="width:20px;height:20px;"></span>
+        System
+      </div>
+      <div class="nav-item" data-page="display">
+        <span class="icon-placeholder" data-icon="display" style="width:20px;height:20px;"></span>
+        Display
+      </div>
+      <div class="nav-item" data-page="sound">
+        <span class="icon-placeholder" data-icon="sound" style="width:20px;height:20px;"></span>
+        Sound
+      </div>
+      <div class="nav-item" data-page="power">
+        <span class="icon-placeholder" data-icon="power" style="width:20px;height:20px;"></span>
+        Power & Sleep
+      </div>
+      <div class="nav-item" data-page="storage">
+        <span class="icon-placeholder" data-icon="storage" style="width:20px;height:20px;"></span>
+        Storage
+      </div>
+      <div class="nav-item" data-page="taskmanager">
+        <span class="icon-placeholder" data-icon="taskmanager" style="width:20px;height:20px;"></span>
+        Task Manager
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Personalization</div>
+      <div class="nav-item" data-page="personalization">
+        <span class="icon-placeholder" data-icon="personalization" style="width:20px;height:20px;"></span>
+        Personalization
+      </div>
+      <div class="nav-item" data-page="themes">
+        <span class="icon-placeholder" data-icon="themes" style="width:20px;height:20px;"></span>
+        Themes & Colors
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Network</div>
+      <div class="nav-item" data-page="network">
+        <span class="icon-placeholder" data-icon="network" style="width:20px;height:20px;"></span>
+        Network & Internet
+      </div>
+      <div class="nav-item" data-page="bluetooth">
+        <span class="icon-placeholder" data-icon="bluetooth" style="width:20px;height:20px;"></span>
+        Bluetooth & Devices
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Accounts</div>
+      <div class="nav-item" data-page="accounts">
+        <span class="icon-placeholder" data-icon="accounts" style="width:20px;height:20px;"></span>
+        Accounts
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Security</div>
+      <div class="nav-item" data-page="security">
+        <span class="icon-placeholder" data-icon="security" style="width:20px;height:20px;"></span>
+        Privacy & Security
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Hardware</div>
+      <div class="nav-item" data-page="devices">
+        <span class="icon-placeholder" data-icon="devices" style="width:20px;height:20px;"></span>
+        Devices & Drivers
+      </div>
+      <div class="nav-item" data-page="diskmanager">
+        <span class="icon-placeholder" data-icon="diskmanager" style="width:20px;height:20px;"></span>
+        Disk Management
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Updates</div>
+      <div class="nav-item" data-page="updates">
+        <span class="icon-placeholder" data-icon="updates" style="width:20px;height:20px;"></span>
+        Windows Update
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">About</div>
+      <div class="nav-item" data-page="about">
+        <span class="icon-placeholder" data-icon="about" style="width:20px;height:20px;"></span>
+        About
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== CONTENT (only Home page) ======================== -->
+<div id="content">
+  <div class="page active" id="page-home">
+    <div class="page-header">
+      <div class="page-header-top">
+        <div class="page-icon">
+          <span class="icon-placeholder" data-icon="home" style="width:28px;height:28px;"></span>
+        </div>
+        <h1 class="page-title">Home</h1>
+      </div>
+      <div class="page-subtitle">Welcome back — here's your system overview</div>
+    </div>
+
+    <div class="home-banner" id="home-banner">
+      <div class="home-banner-left">
+        <div class="home-greeting" id="home-greeting">Good morning</div>
+        <div class="home-banner-sub" id="home-banner-sub">Your system is running smoothly</div>
+      </div>
+      <div class="home-banner-right">
+        <div class="home-status-dot"></div>
+        <span>All systems normal</span>
+      </div>
+    </div>
+
+    <div class="stats-grid" style="margin-bottom:10px">
+      <div class="stat-card">
+        <div class="stat-label">CPU</div>
+        <div class="stat-value" id="stat-cpu">12%</div>
+        <div class="stat-sub">8-Core · 3.6 GHz</div>
+        <div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" id="cpu-fill" style="width:12%"></div></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Memory</div>
+        <div class="stat-value" id="stat-ram">4.2 GB</div>
+        <div class="stat-sub">of 16 GB used</div>
+        <div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" id="ram-fill" style="width:26%"></div></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Battery</div>
+        <div class="stat-value" id="stat-battery">85%</div>
+        <div class="stat-sub">Plugged in · Charging</div>
+        <div class="progress-wrap"><div class="progress-bar"><div class="progress-fill" id="battery-fill" style="width:85%;background:#32dc64"></div></div></div>
+      </div>
+    </div>
+
+    <div class="home-quick-grid" id="home-quick-grid"></div>
+
+    <div class="card" id="recent-activity-card">
+      <div class="card-title" style="display: flex; justify-content: space-between; align-items: center;">
+        <span>Recent Activity</span>
+        <button class="notif-clear" id="clear-recent-btn" style="font-size: 11px; background: none; border: none; color: var(--accent); cursor: pointer;">Clear all</button>
+      </div>
+      <div id="recent-activity-list" class="notif-list"></div>
+    </div>
+  </div>
+</div><!-- /content -->
+
+</div><!-- /app -->
+
+<script type="module" src="main.js"></script>
+
+<!-- Inject icons from WebOSResources -->
+<script>
+  (function() {
+    function inject() {
+      if (typeof WebOSResources === 'undefined') {
+        setTimeout(inject, 30);
+        return;
+      }
+      document.querySelectorAll('.icon-placeholder[data-icon]').forEach(el => {
+        const name = el.getAttribute('data-icon');
+        let size = el.style.width || el.getAttribute('width');
+        const opts = {};
+        if (size) opts.size = size;
+        const svg = WebOSResources.getIcon(name, opts);
+        if (svg) {
+          const div = document.createElement('div');
+          div.innerHTML = svg;
+          const svgEl = div.firstElementChild;
+          if (svgEl) {
+            svgEl.classList.add(...el.classList);
+            el.parentNode.replaceChild(svgEl, el);
+          }
+        }
+      });
+    }
+    inject();
+  })();
+</script>
+</body>
+</html>

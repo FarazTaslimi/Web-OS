@@ -1,0 +1,13 @@
+window.Notifications.add('Test Notification', 'This is a test message!');
+
+const source = audioCtx.createBufferSource();
+source.buffer = buffer;
+source.connect(window.audioGain);
+source.start();
+
+
+// هنگام باز شدن برنامه
+window.TaskbarService?.addApp('explorer', 'File Explorer', '<svg>...</svg>');
+
+// هنگام بستن برنامه
+window.TaskbarService?.removeApp('explorer');

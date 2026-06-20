@@ -1,0 +1,10 @@
+{
+  "desktops": [
+    {
+      "id": "desk-1780730345833",
+      "name": "Desktop 3",
+      "windows": []
+    }
+  ],
+  "activeDesktop": "desk-1780730345833"
+}

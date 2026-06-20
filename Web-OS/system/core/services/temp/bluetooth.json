@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "connected": false,
+  "deviceName": "",
+  "devices": [
+    {
+      "name": "Qualcomm Atheros QCA9377 Bluetooth 4.1",
+      "type": "device",
+      "signal": 80
+    }
+  ]
+}

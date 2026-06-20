@@ -1,0 +1,32 @@
+[
+  {
+    "commandId": "5ed64052abe0cdbd",
+    "action": "getInfo",
+    "timestamp": 1781589703511,
+    "success": true,
+    "usagePercent": 5,
+    "cores": 8,
+    "speed": "2.1 GHz",
+    "durationMs": 0
+  },
+  {
+    "commandId": "aacacf214cdf3b1d",
+    "action": "getInfo",
+    "timestamp": 1781589739084,
+    "success": true,
+    "usagePercent": 7,
+    "cores": 8,
+    "speed": "2.2 GHz",
+    "durationMs": 1
+  },
+  {
+    "commandId": "e0df5dcfed91ec77",
+    "action": "getInfo",
+    "timestamp": 1781589748563,
+    "success": true,
+    "usagePercent": 7,
+    "cores": 8,
+    "speed": "2.1 GHz",
+    "durationMs": 0
+  }
+]

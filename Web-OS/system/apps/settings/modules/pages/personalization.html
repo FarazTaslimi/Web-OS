@@ -1,0 +1,89 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="personalization" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Personalization</h1>
+  </div>
+  <div class="page-subtitle">Wallpaper, lock screen, Start menu layout</div>
+</div>
+
+<div class="card">
+  <div class="card-title">Wallpaper</div>
+  <div style="padding:14px 18px">
+    <div class="wallpaper-grid">
+      <div class="wp-thumb selected"><div style="background:linear-gradient(135deg,#0d2a6b,#0a3d62,#051530)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#1a0533,#0d3b6e,#062a4e)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#0b3d2e,#1a5c3a,#0a2e22)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#3d0b0b,#5c1a1a,#2e0a0a)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#2d1b69,#11998e,#38ef7d)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#f093fb,#f5576c,#4facfe)"></div></div>
+      <div class="wp-thumb"><div style="background:linear-gradient(135deg,#43e97b,#38f9d7,#4facfe)"></div></div>
+    </div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Slideshow</div><div class="setting-desc">Automatically change wallpaper</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Taskbar</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Taskbar Alignment</div><div class="setting-desc">Position of taskbar icons</div></div>
+    <select class="setting-select"><option>Center</option><option>Left</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Auto-hide taskbar</div><div class="setting-desc">Hide when not in use</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show taskbar clock</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Lock Screen</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Lock screen style</div></div>
+    <select class="setting-select"><option>Windows spotlight</option><option>Picture</option><option>Slideshow</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show lock screen background on sign-in</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Start Menu</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show recently added apps</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show most used apps</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Show recent items in Start</div><div class="setting-desc">Files and folders opened recently</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Start menu layout</div></div>
+    <select class="setting-select"><option>Default</option><option>More pins</option><option>More recommendations</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Fonts</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">System font</div><div class="setting-desc">Used across the UI</div></div>
+    <select class="setting-select"><option>Outfit (Default)</option><option>Segoe UI</option><option>Inter</option><option>SF Pro</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Font size</div><div class="setting-desc">Affects all system text</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="80" max="150" value="100" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">100%</span></div>
+  </div>
+</div>

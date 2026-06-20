@@ -1,0 +1,107 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="display" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Display</h1>
+  </div>
+  <div class="page-subtitle">Brightness, resolution, orientation, Night Light</div>
+</div>
+
+<div class="display-preview">
+  <div>
+    <div class="monitor-mock"><svg width="60" height="40" viewBox="0 0 60 40" fill="none"><rect x="5" y="5" width="50" height="30" rx="2" fill="rgba(96,205,255,.08)" stroke="rgba(96,205,255,.2)" stroke-width="1"/><line x1="5" y1="15" x2="55" y2="15" stroke="rgba(96,205,255,.15)" stroke-width="1"/><rect x="10" y="19" width="20" height="4" rx="1" fill="rgba(255,255,255,.1)"/><rect x="10" y="25" width="14" height="3" rx="1" fill="rgba(255,255,255,.07)"/></svg></div>
+    <div class="monitor-stand"></div>
+    <div class="monitor-base"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Brightness & Color</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="sun" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Brightness</div><div class="setting-desc">Adjust display brightness</div></div>
+    <div class="setting-slider-wrap"><input type="range" class="setting-slider" min="0" max="100" value="80" oninput="this.nextElementSibling.textContent=this.value+'%'"><span class="slider-val">80%</span></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="nightlight" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Night Light</div><div class="setting-desc">Reduce blue light after sunset</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="privacy" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">HDR</div><div class="setting-desc">High Dynamic Range display</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Resolution & Layout</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="display" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Display Resolution</div><div class="setting-desc">Recommended for your display</div></div>
+    <select class="setting-select"><option>2560 × 1440</option><option>1920 × 1080</option><option>1280 × 720</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="refresh" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Refresh Rate</div><div class="setting-desc">Higher is smoother</div></div>
+    <select class="setting-select"><option>144 Hz</option><option>120 Hz</option><option>60 Hz</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="plus" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Scale</div><div class="setting-desc">Size of text, apps and other items</div></div>
+    <select class="setting-select"><option>125% (Recommended)</option><option>100%</option><option>150%</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Multiple Displays</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="devices" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Multiple display mode</div><div class="setting-desc">How to use your connected displays</div></div>
+    <select class="setting-select"><option>Extend displays</option><option>Duplicate</option><option>Show only on 1</option><option>Show only on 2</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Make this the main display</div><div class="setting-desc">Desktop icons appear on main display</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Advanced Display</div>
+  <div class="setting-row">
+    <div class="setting-icon">
+      <span class="icon-placeholder" data-icon="display" style="width:20px;height:20px;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Color profile</div><div class="setting-desc">sRGB IEC61966-2.1</div></div>
+    <div class="row-arrow">
+      <span class="icon-placeholder" data-icon="chevron-right" style="width:16px;height:16px;"></span>
+    </div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Variable refresh rate</div><div class="setting-desc">Reduces screen tearing (G-Sync / FreeSync)</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Auto color management</div><div class="setting-desc">Better color accuracy across apps</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Content adaptive brightness</div><div class="setting-desc">Dynamically adjust brightness based on content</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>

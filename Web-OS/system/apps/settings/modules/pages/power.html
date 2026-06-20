@@ -1,0 +1,86 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="power" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Power & Sleep</h1>
+  </div>
+  <div class="page-subtitle">Battery usage, screen and sleep timeouts</div>
+</div>
+
+<div class="card">
+  <div class="card-title">Screen</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Turn off screen after</div><div class="setting-desc">On battery</div></div>
+    <select class="setting-select"><option>5 minutes</option><option>10 minutes</option><option>15 minutes</option><option>Never</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Turn off screen after</div><div class="setting-desc">When plugged in</div></div>
+    <select class="setting-select"><option>15 minutes</option><option>30 minutes</option><option>1 hour</option><option>Never</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Sleep</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">PC goes to sleep after</div><div class="setting-desc">On battery</div></div>
+    <select class="setting-select"><option>15 minutes</option><option>30 minutes</option><option>1 hour</option><option>Never</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">PC goes to sleep after</div><div class="setting-desc">When plugged in</div></div>
+    <select class="setting-select"><option>1 hour</option><option>2 hours</option><option>Never</option></select>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Power Mode</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Power mode</div><div class="setting-desc">Balance performance and battery life</div></div>
+    <select class="setting-select"><option>Balanced (Recommended)</option><option>Best Performance</option><option>Best Power Efficiency</option></select>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Fast Startup</div><div class="setting-desc">Boot faster after shutdown</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Battery Health</div>
+  <div class="setting-row">
+    <div class="setting-icon" style="background:rgba(52,211,153,.1)">
+      <span class="icon-placeholder" data-icon="battery" style="width:20px;height:20px;color:#34d399;"></span>
+    </div>
+    <div class="setting-info"><div class="setting-name">Battery health</div><div class="setting-desc">Estimated capacity: 95% of original</div></div>
+    <span class="badge green">Good</span>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Battery usage by app</div><div class="setting-desc">See which apps consume most power</div></div>
+    <div class="row-arrow">
+      <span class="icon-placeholder" data-icon="chevron-right" style="width:16px;height:16px;"></span>
+    </div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Battery saver</div><div class="setting-desc">Automatically enable below 20%</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Charge limit</div><div class="setting-desc">Limit charge to 80% to extend battery life</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Hibernate & Advanced</div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Hibernate</div><div class="setting-desc">Save session to disk before turning off</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">Wake on LAN</div><div class="setting-desc">Allow network to wake this PC</div></div>
+    <div class="toggle" onclick="this.classList.toggle('on')"></div>
+  </div>
+  <div class="setting-row">
+    <div class="setting-info"><div class="setting-name">USB-C charging when off</div></div>
+    <div class="toggle on" onclick="this.classList.toggle('on')"></div>
+  </div>
+</div>

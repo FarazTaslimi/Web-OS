@@ -1,0 +1,28 @@
+{
+  "wifiEnabled": false,
+  "connected": false,
+  "ssid": "",
+  "signal": 0,
+  "networks": [
+    {
+      "ssid": "HomeNetwork",
+      "signal": 90,
+      "secured": true
+    },
+    {
+      "ssid": "CoffeeShop_WiFi",
+      "signal": 60,
+      "secured": false
+    },
+    {
+      "ssid": "Office_5G",
+      "signal": 75,
+      "secured": true
+    },
+    {
+      "ssid": "Neighbors_Net",
+      "signal": 40,
+      "secured": true
+    }
+  ]
+}

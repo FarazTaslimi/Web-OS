@@ -1,0 +1,35 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="diskmanager" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Disk Management</h1>
+  </div>
+</div>
+
+<div class="disk-card">
+  <div class="disk-header"><div class="disk-name">Disk 0 · NVMe SSD · 512 GB</div><div class="disk-size">Online</div></div>
+  <div style="display:flex;gap:4px;margin-bottom:12px;">
+    <div style="flex:0.08;background:#555;border-radius:4px 0 0 4px;height:32px;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:rgba(255,255,255,.5)">EFI</div>
+    <div style="flex:0.47;background:linear-gradient(90deg,#0067c0,#60cdff);border-radius:0;height:32px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff;font-weight:400">C: · NTFS · 240 GB</div>
+    <div style="flex:0.45;background:linear-gradient(90deg,#498205,#6ed44c);border-radius:0 4px 4px 0;height:32px;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:#fff;font-weight:400">D: · NTFS · 272 GB</div>
+  </div>
+  <div class="disk-legend">
+    <div class="disk-legend-item"><div class="disk-dot" style="background:#0067c0"></div>C: System (240 GB)</div>
+    <div class="disk-legend-item"><div class="disk-dot" style="background:#498205"></div>D: Data (272 GB)</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Volumes</div>
+  <table class="proc-table">
+    <thead>
+      <tr><th>Volume</th><th>Layout</th><th>Type</th><th>File System</th><th>Capacity</th><th>Free</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>(EFI)</td><td>Simple</td><td>Basic</td><td>FAT32</td><td>512 MB</td><td>400 MB</td><td><span class="badge green">Healthy</span></td></tr>
+      <tr><td>C: (System)</td><td>Simple</td><td>Basic</td><td>NTFS</td><td>240 GB</td><td>112 GB</td><td><span class="badge green">Healthy</span></td></tr>
+      <tr><td>D: (Data)</td><td>Simple</td><td>Basic</td><td>NTFS</td><td>272 GB</td><td>272 GB</td><td><span class="badge green">Healthy</span></td></tr>
+    </tbody>
+  </table>
+</div>

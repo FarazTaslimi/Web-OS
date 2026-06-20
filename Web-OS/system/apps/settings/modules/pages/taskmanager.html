@@ -1,0 +1,80 @@
+<div class="page-header">
+  <div class="page-header-top">
+    <div class="page-icon">
+      <span class="icon-placeholder" data-icon="taskmanager" style="width:24px;height:24px;"></span>
+    </div>
+    <h1 class="page-title">Task Manager</h1>
+  </div>
+  <div class="page-subtitle">CPU, memory, processes and performance</div>
+</div>
+
+<div class="tabs">
+  <div class="tab-btn active" onclick="switchTab(this,'tab-perf')">Performance</div>
+  <div class="tab-btn" onclick="switchTab(this,'tab-proc')">Processes</div>
+  <div class="tab-btn" onclick="switchTab(this,'tab-startup')">Startup</div>
+</div>
+
+<div class="tab-content active" id="tab-perf">
+  <div class="perf-grid">
+    <div class="perf-card">
+      <div class="perf-card-header"><span class="perf-card-name">CPU</span><span class="perf-card-val">12%</span></div>
+      <div class="perf-chart">
+        <div class="perf-bar" style="height:8%"></div><div class="perf-bar" style="height:15%"></div><div class="perf-bar" style="height:10%"></div><div class="perf-bar" style="height:22%"></div><div class="perf-bar" style="height:18%"></div><div class="perf-bar" style="height:12%"></div><div class="perf-bar" style="height:9%"></div><div class="perf-bar" style="height:14%"></div><div class="perf-bar" style="height:20%"></div><div class="perf-bar" style="height:12%"></div>
+      </div>
+      <div style="font-size:.7rem;color:var(--text3);margin-top:6px;">8-Core · 3.6 GHz</div>
+    </div>
+    <div class="perf-card">
+      <div class="perf-card-header"><span class="perf-card-name">Memory</span><span class="perf-card-val">26%</span></div>
+      <div class="perf-chart">
+        <div class="perf-bar" style="height:24%"></div><div class="perf-bar" style="height:25%"></div><div class="perf-bar" style="height:26%"></div><div class="perf-bar" style="height:24%"></div><div class="perf-bar" style="height:28%"></div><div class="perf-bar" style="height:26%"></div><div class="perf-bar" style="height:25%"></div><div class="perf-bar" style="height:27%"></div><div class="perf-bar" style="height:26%"></div><div class="perf-bar" style="height:26%"></div>
+      </div>
+      <div style="font-size:.7rem;color:var(--text3);margin-top:6px;">4.2 GB / 16 GB</div>
+    </div>
+    <div class="perf-card">
+      <div class="perf-card-header"><span class="perf-card-name">Disk</span><span class="perf-card-val">3%</span></div>
+      <div class="perf-chart">
+        <div class="perf-bar" style="height:2%"></div><div class="perf-bar" style="height:8%"></div><div class="perf-bar" style="height:3%"></div><div class="perf-bar" style="height:1%"></div><div class="perf-bar" style="height:12%"></div><div class="perf-bar" style="height:3%"></div><div class="perf-bar" style="height:2%"></div><div class="perf-bar" style="height:4%"></div><div class="perf-bar" style="height:3%"></div><div class="perf-bar" style="height:3%"></div>
+      </div>
+      <div style="font-size:.7rem;color:var(--text3);margin-top:6px;">NVMe SSD · 512 GB</div>
+    </div>
+    <div class="perf-card">
+      <div class="perf-card-header"><span class="perf-card-name">Network</span><span class="perf-card-val">0.1 Mbps</span></div>
+      <div class="perf-chart">
+        <div class="perf-bar" style="height:1%"></div><div class="perf-bar" style="height:3%"></div><div class="perf-bar" style="height:1%"></div><div class="perf-bar" style="height:5%"></div><div class="perf-bar" style="height:2%"></div><div class="perf-bar" style="height:1%"></div><div class="perf-bar" style="height:4%"></div><div class="perf-bar" style="height:1%"></div><div class="perf-bar" style="height:2%"></div><div class="perf-bar" style="height:1%"></div>
+      </div>
+      <div style="font-size:.7rem;color:var(--text3);margin-top:6px;">Wi-Fi · 250 Mbps max</div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-proc">
+  <div class="card" style="margin-bottom:0">
+    <table class="proc-table">
+      <thead>
+        <tr><th>Name</th><th>CPU</th><th>Memory</th><th>Disk</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><div class="proc-name"><div class="proc-dot" style="background:#60cdff"></div>WebOS Shell</div></td><td>1.2%</td><td>85 MB</td><td>0 MB/s</td><td><span class="badge green">Running</span></td></tr>
+        <tr><td><div class="proc-name"><div class="proc-dot" style="background:#34d399"></div>Edge Browser</div></td><td>3.5%</td><td>312 MB</td><td>0.1 MB/s</td><td><span class="badge green">Running</span></td></tr>
+        <tr><td><div class="proc-name"><div class="proc-dot" style="background:#ffc800"></div>File Explorer</div></td><td>0.4%</td><td>42 MB</td><td>0 MB/s</td><td><span class="badge green">Running</span></td></tr>
+        <tr><td><div class="proc-name"><div class="proc-dot" style="background:#a78bfa"></div>Settings</div></td><td>0.2%</td><td>28 MB</td><td>0 MB/s</td><td><span class="badge green">Running</span></td></tr>
+        <tr><td><div class="proc-name"><div class="proc-dot" style="background:rgba(255,255,255,.3)"></div>System Idle</div></td><td>94.7%</td><td>—</td><td>—</td><td><span class="badge">Idle</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-startup">
+  <div class="card" style="margin-bottom:0">
+    <table class="proc-table">
+      <thead>
+        <tr><th>Name</th><th>Publisher</th><th>Startup Impact</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>WebOS Shell</td><td>WebOS System</td><td><span class="badge green">Low</span></td><td><div class="toggle on" onclick="this.classList.toggle('on')"></div></td></tr>
+        <tr><td>Edge Browser</td><td>Microsoft</td><td><span class="badge warn">Medium</span></td><td><div class="toggle on" onclick="this.classList.toggle('on')"></div></td></tr>
+        <tr><td>OneDrive</td><td>Microsoft</td><td><span class="badge red">High</span></td><td><div class="toggle" onclick="this.classList.toggle('on')"></div></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
