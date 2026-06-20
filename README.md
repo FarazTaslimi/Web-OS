@@ -1,6 +1,6 @@
 # Web-OS
 
-📁 C:. <br>
+📁 Web-OS: <br>
 │ 📜 boot.js <br>
 │ 🌐 index.html <br>
 │ 🔒 package-lock.json <br>
